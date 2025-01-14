@@ -1,20 +1,14 @@
 ## Step-by-step guide to get started
 
-1.  ![Minimum System Requirement](./src/assets/images/readme/sys-requirement.png)
-
----
+# App created with below config
+    `node 18.18.0`
+    `React 19.0.0"`
 
 1.  `npm install`
 
 ---
 
-3.  add environment files from [Environment Variables](https://cooliyo.atlassian.net/l/c/Vvzg0x0i)
-    Also add `REACT_APP_ENCRYPT_SECRET_KEY` variable in your global environment variables
-    (linux / ubuntu - sudo -H gedit /etc/environment -> add env variable and value -> restart machine once)
-
----
-
-4. Extensions for **Visual Studio Code (VSCode)** IDE
+2. Extensions for **Visual Studio Code (VSCode)** IDE
    - EditorConfig for VS Code by _EditorConfig_
    - Prettier - Code formatter by _Prettier_
    - Eslint by Dirk Baeumer
@@ -37,7 +31,7 @@
        - For Release branch, write release number
          `release/1.0.0`
      - Create a hotfix (forked from **master**)
-       - `hotfix/SGD-654_NavigationLinkBroken`
+       - `hotfix/TC-123_NavigationLinkBroken`
 
 ---
 
@@ -45,8 +39,6 @@
    - All New React components must be written using [hooks](https://reactjs.org/docs/hooks-intro.html) APIs
    - For SCSS/CSS
      - Give the component name to your .scss/.css file
-     - ![Folder Structure](./src/assets/images/readme/folder-structure.png)
-       > **Note**: Follow the same folder structure defined in the project for legacy codebase instead of following the structure shown in the above pic.
 
 ---
 
