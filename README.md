@@ -4,7 +4,11 @@
     `node 18.18.0`
     `React 19.0.0"`
 
-1.  `npm install`
+1. Project setup
+   
+  `npm install` To install all dependencies
+
+   `npm start` To start project
 
 ---
 
