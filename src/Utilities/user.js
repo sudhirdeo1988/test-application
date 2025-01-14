@@ -8,16 +8,16 @@ import {
 
 export const commonRoutes = [
   {
-    id: "insights",
-    label: "Insights Management",
-    route: "/insights",
-    icon: <AreaChartOutlined />,
-  },
-  {
     id: "data",
     label: "Data Management",
     route: "/data",
     icon: <ProfileOutlined />,
+  },
+  {
+    id: "insights",
+    label: "Insights Management",
+    route: "/insights",
+    icon: <AreaChartOutlined />,
   },
 ];
 
@@ -58,13 +58,13 @@ export const userTypes = [
         route: "/user",
         icon: <UserOutlined />,
       },
+      ...commonRoutes,
       {
         id: "workflow",
         label: "Workflow Management",
         route: "/workflow",
         icon: <ApartmentOutlined />,
       },
-      ...commonRoutes,
     ],
   },
   {

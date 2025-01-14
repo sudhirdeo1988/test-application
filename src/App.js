@@ -17,45 +17,43 @@ const PageSkeleton = lazy(() =>
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <Suspense fallback={<></>}>
-        <Router>
-          <Routes>
-            <Route path="/" element={<PageSkeleton />}>
-              {_map(routes, (route) => {
-                if (route?.isProtected) {
-                  return (
-                    <Route
-                      key={route?.path}
-                      exact={route?.isExact}
-                      path={route?.path}
-                      element={
-                        <ProtectedRoute>{route?.component}</ProtectedRoute>
-                      }
-                    />
-                  );
-                }
-              })}
-
-              <Route path="*" element={<Dashboard />} />
-            </Route>
-
+    <Suspense fallback={<></>}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<PageSkeleton />}>
             {_map(routes, (route) => {
-              if (!route?.isProtected) {
+              if (route?.isProtected) {
                 return (
                   <Route
                     key={route?.path}
                     exact={route?.isExact}
                     path={route?.path}
-                    element={route?.component}
+                    element={
+                      <ProtectedRoute>{route?.component}</ProtectedRoute>
+                    }
                   />
                 );
               }
             })}
-          </Routes>
-        </Router>
-      </Suspense>
-    </Provider>
+
+            <Route path="*" element={<Dashboard />} />
+          </Route>
+
+          {_map(routes, (route) => {
+            if (!route?.isProtected) {
+              return (
+                <Route
+                  key={route?.path}
+                  exact={route?.isExact}
+                  path={route?.path}
+                  element={route?.component}
+                />
+              );
+            }
+          })}
+        </Routes>
+      </Router>
+    </Suspense>
   );
 };
 
