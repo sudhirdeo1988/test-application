@@ -48,23 +48,33 @@
 
 ---
 
-### User with their roles
+### User with their roles (use below credentials to login)
 
 
-**Super Admin**
-User Name: superadmin
-password: superadmin@123
+**Super Admin**   
+
+User Name: **superadmin**
+
+password: **superadmin@123**
+
 
 **Admin**
-User Name: admin
-password: admin@123
 
-**user**
-User Name: user
-password: user@123
+User Name: **admin**
 
-**All user mentioned in file **
-Utilities/user.js
+password: **admin@123**
+
+
+**User**
+
+User Name: **user**
+
+password: **user@123**
+
+
+#### All user mentioned in file
+
+**Utilities/user.js**
 
 ---
 
