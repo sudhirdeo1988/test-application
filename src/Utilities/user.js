@@ -25,7 +25,7 @@ export const userTypes = [
   {
     id: "user_1",
     userName: "superadmin",
-    password: "admin@123",
+    password: "superadmin@123",
     role: "super_admin",
     name: "Sudhir As Super Admin",
     email: "sudhir@gmail.com",
