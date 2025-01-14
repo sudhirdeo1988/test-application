@@ -1,6 +1,6 @@
 ## Step-by-step guide to get started
 
-# App created with below config
+### App created with below config
     `node 18.18.0`
     `React 19.0.0"`
 
@@ -15,13 +15,13 @@
 
 ---
 
-5. Extensions for debugging in Browser (Good to Have)
+3. Extensions for debugging in Browser (Good to Have)
    - React Dev Tools by _Facebook_
    - Redux Dev Tools by _remotedevio_
 
 ---
 
-6. Branching strategies to follow
+4. Branching strategies to follow
    - [Branching Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
    - Branch naming conventions
      - Create a feature/bugfix/release (Forked from **develop**)
@@ -35,18 +35,46 @@
 
 ---
 
-7. Coding Practices
+5. Coding Practices
    - All New React components must be written using [hooks](https://reactjs.org/docs/hooks-intro.html) APIs
    - For SCSS/CSS
      - Give the component name to your .scss/.css file
 
 ---
 
-8. Refer scripts in package.json
+6. Refer scripts in package.json
    - By default start scripts points to staging backend. All the development stuff which affects the back-end(CRUD operations) should be done only on staging points or local backend.
    - ![Scripts](src/assets/images/readme/scripts.png)
 
 ---
+
+### User with their roles (use below credentials to login)
+
+
+**Super Admin**   
+
+User Name: **superadmin**
+
+password: **superadmin@123**
+
+
+**Admin**
+
+User Name: **admin**
+
+password: **admin@123**
+
+
+**User**
+
+User Name: **user**
+
+password: **user@123**
+
+
+#### All user mentioned in file
+
+**Utilities/user.js**
 
 ---
 
