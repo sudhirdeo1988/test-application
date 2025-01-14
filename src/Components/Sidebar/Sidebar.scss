@@ -1,0 +1,23 @@
+@import "../../Assets/styles/variables";
+
+.c-menuBar {
+  .link {
+    color: #a9b6e3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    text-align: left;
+    font-size: 0.8125rem;
+    padding: 14px;
+    margin: 0 12px 8px 0;
+    @include rounded-corners(0 100px 100px 0);
+    @include transition(all ease 0.3s);
+
+    &:hover,
+    &.active {
+      background-color: RGBA(255, 255, 255, 0.1);
+      color: $white;
+    }
+  }
+}

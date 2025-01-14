@@ -1,0 +1,39 @@
+$primary-color: #2741ff;
+$page-bg-color: #eeeeee;
+
+$white: #fff;
+$black: #000;
+
+// --- Color calculations
+$font-color: #667085;
+$font-color-light: #98a2b3;
+
+@mixin rounded-corners($property) {
+  -webkit-border-radius: $property;
+  -moz-border-radius: $property;
+  border-radius: $property !important;
+}
+
+@mixin box-shadow($property) {
+  box-shadow: $property !important;
+  -moz-box-shadow: $property !important;
+  -webkit-box-shadow: $property !important;
+  -ms-box-shadow: $property !important;
+  -o-box-shadow: $property !important;
+}
+
+@mixin transition($property) {
+  transition: $property;
+  -moz-transition: $property;
+  -webkit-transition: $property;
+  -o-transition: $property;
+  -ms-transition: $property;
+}
+
+@mixin transform($property) {
+  transform: $property;
+  -moz-transform: $property;
+  -webkit-transform: $property;
+  -o-transform: $property;
+  -ms-transform: $property;
+}

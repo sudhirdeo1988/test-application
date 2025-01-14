@@ -1,0 +1,21 @@
+@import "../../Assets/styles/variables";
+
+.containerHeader {
+  align-items: center;
+  background-color: $white;
+  border-block-end: 1px solid #f3f3f3;
+  display: flex;
+  height: 64px;
+  inset-block-start: 0;
+  inset-inline: 0;
+  left: 240px;
+  padding: 12px 16px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  @include box-shadow(0 0px 7px 0 rgba(47, 43, 61, 0.14));
+
+  .left {
+    flex-grow: 1;
+  }
+}
