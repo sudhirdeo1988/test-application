@@ -103,6 +103,12 @@ body {
   @include rounded-corners(10px);
 }
 
+.userBadge {
+  background-color: $page-bg-color;
+  padding: 4px 12px 4px 8px;
+  @include rounded-corners(100px);
+}
+
 /* -------------------------------------
       🍔 3. Heading
     ------------------------------------- */

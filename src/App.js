@@ -1,7 +1,5 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Provider } from "react-redux";
-import store from "./Redux/store";
 import ProtectedRoute from "./Routes/ProtectedRoute/ProtectedRoute.jsx";
 import Dashboard from "./Pages/Dashboard";
 import "@ant-design/v5-patch-for-react-19";

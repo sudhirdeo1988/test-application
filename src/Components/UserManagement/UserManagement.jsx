@@ -1,7 +1,11 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Space, Table, Row, Col, Button, Modal } from "antd";
-import { forEach as _forEach, isEmpty as _isEmpty } from "lodash-es";
+import {
+  forEach as _forEach,
+  isEmpty as _isEmpty,
+  find as _find,
+} from "lodash-es";
 import {
   DeleteFilled,
   EditFilled,
@@ -140,6 +144,9 @@ const UserManagement = () => {
       : []),
   ];
 
+  const findSelectedItemDetails =
+    _find(list, (item) => item?.id === selectedItem) || {};
+
   return (
     <div className="c-card">
       <Row className="mb-2">
@@ -159,7 +166,7 @@ const UserManagement = () => {
 
       {!_isEmpty(mode) && (
         <Modal
-          title={currentUserDetails?.name || "Create New Record"}
+          title={findSelectedItemDetails?.name || "Create New Record"}
           open={openModal}
           onCancel={onCloseModalEvent}
           footer={null}

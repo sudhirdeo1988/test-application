@@ -78,7 +78,7 @@ export const userTypes = [
     isApproved: true,
     featureConfig: {
       viewUser: true,
-      createUser: false,
+      createUser: true,
       editUser: true,
       deleteUser: true,
       createWorkFlow: false,

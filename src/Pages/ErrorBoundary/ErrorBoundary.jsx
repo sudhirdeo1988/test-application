@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Result } from "antd";
+import { Result, Button } from "antd";
 
 class ErrorBoundary extends Component {
   state = { hasError: false, reloadCount: 0 };
@@ -26,8 +26,17 @@ class ErrorBoundary extends Component {
     if (this.state.hasError) {
       return (
         <Result
-          status="warning"
-          title="There are some problems with your operation."
+          status="500"
+          title="500"
+          subTitle="Sorry, something went wrong."
+          extra={
+            <Button
+              type="primary"
+              onClick={() => (window.location.href = "/dashboard")}
+            >
+              Back To Dashboard
+            </Button>
+          }
         />
       );
     }

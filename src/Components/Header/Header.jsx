@@ -58,7 +58,19 @@ const Header = () => {
                 />
               }
             >
-              <Avatar size="large" icon={<UserOutlined />} />
+              <div className="userBadge">
+                <Space>
+                  <Avatar size="large" icon={<UserOutlined />} />
+                  <div>
+                    <span className="c-heading size-5 bold">
+                      {currentUserDetails?.name}
+                    </span>
+                    <span className="c-heading size-6 bold">
+                      {currentUserDetails?.role}
+                    </span>
+                  </div>
+                </Space>
+              </div>
             </Popover>
           </Space>
         </div>
