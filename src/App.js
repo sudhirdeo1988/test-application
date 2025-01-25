@@ -2,10 +2,9 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProtectedRoute from "./Routes/ProtectedRoute/ProtectedRoute.jsx";
 import Dashboard from "./Pages/Dashboard";
-import "@ant-design/v5-patch-for-react-19";
-
 import { map as _map } from "lodash-es";
 import { routes } from "./Routes/routes";
+import "antd/dist/antd.css";
 
 const PageSkeleton = lazy(() =>
   import(

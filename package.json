@@ -8,7 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "ajv": "^8.17.1",
-    "antd": "^5.23.1",
+    "antd": "^4.24.16",
     "jwt-decode": "^4.0.0",
     "lodash-es": "^4.17.21",
     "nanoid": "^5.0.9",
@@ -45,7 +45,6 @@
     ]
   },
   "devDependencies": {
-    "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "react-app-rewired": "^2.2.1",
     "sass": "^1.83.1",
     "sass-loader": "^16.0.4"
